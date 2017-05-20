@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Happy People Happy Planet</title>
+<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+<script src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.2/modernizr.js"></script>
+<script src="https://www.gstatic.com/firebasejs/3.9.0/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/3.9.0/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/3.9.0/firebase-database.js"></script>
+<link rel="stylesheet" href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css">
+<link rel="stylesheet" href="Styles/main.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500">
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+<link rel="stylesheet" href="Styles/parallax.css">
+<link href="https://fonts.googleapis.com/css?family=Kaushan+Script" rel="stylesheet">
+</head>
+<body class="demo-body mdc-typography">
+     <div class="se-pre-con"></div>
+
+      <nav class="mdc-permanent-drawer">
+        	<nav class="mdc-list"> 
+				<a class="mdc-list-item mdc-permanent-drawer--selected" href="#"> <i class="material-icons mdc-list-item__start-detail" aria-hidden="true">home</i>Home </a> 
+				<a class="mdc-list-item" href="#"> <i class="material-icons mdc-list-item__start-detail" aria-hidden="true">face</i>About </a> 
+			</nav>
+			<hr class="mdc-list-divider">
+			<nav class="mdc-list"> 
+				<a class="mdc-list-item" href="#"> <i class="material-icons mdc-list-item__start-detail" aria-hidden="true">shop</i>BE TAO NOW </a> 
+				<a class="mdc-list-item" href="#"> <i class="material-icons mdc-list-item__start-detail" aria-hidden="true">class</i>Classes </a> 
+				<a class="mdc-list-item" href="#"> <i class="material-icons mdc-list-item__start-detail" aria-hidden="true">web</i>Blogs </a> 
+				<a class="mdc-list-item" href="#"> <i class="material-icons mdc-list-item__start-detail" aria-hidden="true">event</i>Calendar </a> 
+				<a class="mdc-list-item" href="#"> <i class="material-icons mdc-list-item__start-detail" aria-hidden="true">group_work</i>Retreats </a> 
+			</nav>
+			<hr class="mdc-list-divider">
+			<nav class="mdc-list"> 
+				<a class="mdc-list-item" href="#"> <i class="material-icons mdc-list-item__start-detail" aria-hidden="true">album</i>Drumming </a> 
+				<a class="mdc-list-item" href="#"> <i class="material-icons mdc-list-item__start-detail" aria-hidden="true">favorite</i>Joyful Living </a> 
+				<a class="mdc-list-item" href="#"> <i class="material-icons mdc-list-item__start-detail" aria-hidden="true">av_timer</i>The Goddess Signs </a> 
+				<a class="mdc-list-item" href="#"> <i class="material-icons mdc-list-item__start-detail" aria-hidden="true">work</i>Research </a> 
+			</nav>
+      </nav>
+    <div class="demo-content">
+    
+      <main class="demo-main">
+       
+       <div id="parallax">
+		  <div class="layer-1 layer" data-type="parallax" data-depth="0.05"></div>
+		  <div class="layer-2 layer" data-type="parallax" data-depth="0.10"></div>
+		  <div class="layer-3 layer" data-type="parallax" data-depth="0.15"></div>
+		  <div class="layer-4 layer" data-type="parallax" data-depth="0.20"></div>
+		  <div class="layer-5 layer" data-type="parallax" data-depth="0.25"></div>
+		  <div class="layer-6 layer" data-type="parallax" data-depth="0.30"></div>
+		  <div class="layer-7 layer" data-type="parallax" data-depth="0.35"></div>
+		  <div class="layer-8 layer" data-type="parallax" data-depth="0.50"></div>
+		  <div class="layer-9 layer" data-type="parallax" data-depth="0.57"></div>
+		  <div class="layer-10 layer" data-type="parallax" data-depth="0.60"></div>
+		  <div class="layer-11 layer" data-type="parallax" data-depth="0.65"></div>
+		  <div class="layer-12 layer" data-type="parallax" data-depth="0.90"></div>
+		  <div class="layer-13 layer" data-type="parallax" data-depth="1.00"></div>
+		</div>
+		<div id="parallax-mobile"></div>
+        <div id="content">
+        	information goes here
+			<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+			<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+			<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+			<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+        </div>
+      </main>
+	</div>
+
+
+<script src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js"></script> 
+<script>window.mdc.autoInit();</script> 
+<script src="JavaScript/main.js"></script> 
+<script src="JavaScript/parallax.js"></script>
+<script src="https://www.gstatic.com/firebasejs/3.9.0/firebase.js"></script> 
+<script>
+	  // Initialize Firebase
+	  var config = {
+		apiKey: "AIzaSyD0B79vzZgIQ9brLCa5rp2755s3KiPvzp0",
+		authDomain: "happypeoplehappyplanet-c0312.firebaseapp.com",
+		databaseURL: "https://happypeoplehappyplanet-c0312.firebaseio.com",
+		projectId: "happypeoplehappyplanet-c0312",
+		storageBucket: "happypeoplehappyplanet-c0312.appspot.com",
+		messagingSenderId: "429221643578"
+	  };
+	  firebase.initializeApp(config);
+	</script>
+</body>
+</html>
