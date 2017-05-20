@@ -17,7 +17,7 @@
 
 #parallax-mobile {
   display: none;
-  background: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/272781/full_illustration.png") no-repeat center bottom/cover;
+  background: url(../Design/ParallaxImages/Full.png) no-repeat center bottom/cover;
   height: 320px;
 }
 
@@ -29,6 +29,8 @@
 
 .layer-13 {
   background-image: url("../Design/ParallaxImages/layer1.png");
+	position: absolute;
+	width: 100%;
 }
 
 .layer-12 {
