@@ -14,11 +14,12 @@
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500">
 <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 <link rel="stylesheet" href="Styles/parallax.css">
+<link rel="stylesheet" href="Styles/loadIn.css">
 <link href="https://fonts.googleapis.com/css?family=Kaushan+Script" rel="stylesheet">
 <link rel="stylesheet" href="Styles/cards.css">
 </head>
 <body class="demo-body mdc-typography">
-
+	<!--Navigation on the Left-->
       <nav class="mdc-permanent-drawer">
         	<nav class="mdc-list"> 
 				<a class="mdc-list-item mdc-permanent-drawer--selected" href="#"> <i class="material-icons mdc-list-item__start-detail" aria-hidden="true">home</i>Home </a> 
@@ -40,10 +41,11 @@
 				<a class="mdc-list-item" href="#"> <i class="material-icons mdc-list-item__start-detail" aria-hidden="true">work</i>Research </a> 
 			</nav>
       </nav>
+      
+      <!--Everything goes to the right of the navigation drawer-->
     <div class="demo-content">
-    
       <main class="demo-main">
-       
+       <!--Header with Parallax effect-->
        <div id="parallax" class="parallax">
 		  <div class="layer-1 layer" data-type="parallax" data-depth="0.05"></div>
 		  <div class="layer-2 layer" data-type="parallax" data-depth="0.10"></div>
@@ -60,27 +62,26 @@
 		  <div class="layer-12 layer" data-type="parallax" data-depth="0.90"></div>
 		  <div class="layer-13 layer"><h2>The How and TAO of Joyful Living</h2></div> 
 		</div>
-		
-		<div id="parallax-mobile"></div>
        
+       <!--Logo-->
        <div class="blur" id="subtitle" data-type="parallax" data-depth="-0.3"><h1>Happy People Happy Planet</h1></div>
        
         <div id="content">
         	<div class="inner">
-        		<div class="cards" id="demo-wrapper">
+        		<div class="cards" data-scroll="toggle(.fromTopIn, .fromTopOut)" id="demo-wrapper">
 					<div class="mdc-card demo-card demo-card--with-avatar">
 					  <section class="mdc-card__primary">
 						<div class="demo-card__avatar"></div>
-						<h1 class="mdc-card__title">BE TAO NOW</h1>
+						<h1 class="mdc-card__title">BE TAO NOW APP</h1>
 						<h2 class="mdc-card__subtitle"> I CHING DRUMMING FOR TRIUMPHANT LIVING! IS NOW FREE!</h2>
 					  </section>
-					  <section class="mdc-card__media demo-card__16-9-media app"></section>
+					  <section class="mdc-card__media demo-card__16-9-media app"><img src="Design/BeTaoNowLogo.png"></section>
 					  <section class="mdc-card__supporting-text">
 						Be Tao NowTM ~ I Ching Drumming for Triumphant Living! is the first and only iOS app to combine all 64 Hexagrams of over 5,000 year-old I Ching wisdom with special drumming patterns and guided meditations based on the eight elements of the I Ching
 					  </section>
 					  <section class="mdc-card__actions">
-						<button class="mdc-button mdc-button--compact mdc-card__action">Action 1</button>
-						<button class="mdc-button mdc-button--compact mdc-card__action">Action 2</button>
+						<button class="mdc-button mdc-button--compact mdc-card__action">Learn More</button>
+						<button class="mdc-button mdc-button--compact mdc-card__action">Go to the App Store</button>
 					  </section>
 					</div>
 					
@@ -88,22 +89,54 @@
 					<div class="mdc-card demo-card demo-card--with-avatar">
 					  <section class="mdc-card__primary">
 						<div class="demo-card__avatar"></div>
-						<h1 class="mdc-card__title">Title</h1>
-						<h2 class="mdc-card__subtitle">Subhead</h2>
+						<h1 class="mdc-card__title">WHAT IS JOYFUL LIVING FROM THE HEART?</h1>
+						<h2 class="mdc-card__subtitle">&nbsp</h2>
 					  </section>
-					  <section class="mdc-card__media demo-card__16-9-media"></section>
+					  
 					  <section class="mdc-card__supporting-text">
-						Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor.
+						Joyful living from the heart is intentional living rather than living by default. It involves, mindfulness, following your intuition and using your heart consciously, actively and dynamically to have dominion over your health, your happiness and to live your greatest potential. Living from the heart gives you the resilience to be happy regardless of the circumstances around you.
+						<br><br>
+						Each person has three brains, the head, heart and gut brain. The gut brain is your resource for body awareness and intuition.<i> Living from the heart integrates all three brains for expanded awareness and intentional living.</i> This is the how and tao of joyful living. Living from the heart is both a science and an art.
 					  </section>
 					  <section class="mdc-card__actions">
-						<button class="mdc-button mdc-button--compact mdc-card__action">Action 1</button>
-						<button class="mdc-button mdc-button--compact mdc-card__action">Action 2</button>
+						<button class="mdc-button mdc-button--compact mdc-card__action">The Science!</button>
 					  </section>
 					</div>
 				</div>
        			<div class="clear"></div>
        			
-       			<div class="cards" id="demo-wrapper">
+       			<div class="cards" data-scroll="toggle(.fromTopIn, .fromTopOut)">
+
+					
+					<div class="mdc-card demo-card demo-card--with-avatar">
+					  <section class="mdc-card__primary">
+						<div class="demo-card__avatar"></div>
+						<h1 class="mdc-card__title">Classes</h1>
+						<h2 class="mdc-card__subtitle">Coming Soon!</h2>
+					  </section>
+					  <section class="mdc-card__media demo-card__16-9-media"></section>
+					  <section class="mdc-card__supporting-text">
+						This is still under contruction
+					  </section>
+					  <section class="mdc-card__actions">
+						<button class="mdc-button mdc-button--compact mdc-card__action">Action 1</button>
+						<button class="mdc-button mdc-button--compact mdc-card__action">Action 2</button>
+					  </section>
+					</div>
+					
+
+				</div>
+       			<div class="clear"></div>
+       			
+       			
+       			
+        	</div>
+        	
+        	
+        	
+        	
+        	<div class="inner">
+        		<div class="cards" data-scroll="toggle(.fromTopIn, .fromTopOut)">
 					<div class="mdc-card demo-card demo-card--with-avatar">
 					  <section class="mdc-card__primary">
 						<div class="demo-card__avatar"></div>
@@ -115,20 +148,41 @@
 						Be Tao NowTM ~ I Ching Drumming for Triumphant Living! is the first and only iOS app to combine all 64 Hexagrams of over 5,000 year-old I Ching wisdom with special drumming patterns and guided meditations based on the eight elements of the I Ching
 					  </section>
 					  <section class="mdc-card__actions">
-						<button class="mdc-button mdc-button--compact mdc-card__action">Action 1</button>
-						<button class="mdc-button mdc-button--compact mdc-card__action">Action 2</button>
+						<button class="mdc-button mdc-button--compact mdc-card__action">Learn More</button>
 					  </section>
 					</div>
+					
 					
 					<div class="mdc-card demo-card demo-card--with-avatar">
 					  <section class="mdc-card__primary">
 						<div class="demo-card__avatar"></div>
-						<h1 class="mdc-card__title">Title</h1>
-						<h2 class="mdc-card__subtitle">Subhead</h2>
+						<h1 class="mdc-card__title">WHAT IS JOYFUL LIVING FROM THE HEART?</h1>
 					  </section>
 					  <section class="mdc-card__media demo-card__16-9-media"></section>
 					  <section class="mdc-card__supporting-text">
-						Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor.
+						Joyful living from the heart is intentional living rather than living by default. It involves, mindfulness, following your intuition and using your heart consciously, actively and dynamically to have dominion over your health, your happiness and to live your greatest potential. Living from the heart gives you the resilience to be happy regardless of the circumstances around you.
+						<br><br>
+						Each person has three brains, the head, heart and gut brain. The gut brain is your resource for body awareness and intuition.<i> Living from the heart integrates all three brains for expanded awareness and intentional living.</i> This is the how and tao of joyful living. Living from the heart is both a science and an art.
+					  </section>
+					  <section class="mdc-card__actions">
+						<button class="mdc-button mdc-button--compact mdc-card__action">The Science!</button>
+					  </section>
+					</div>
+				</div>
+       			<div class="clear"></div>
+       			
+       			<div class="cards" data-scroll="toggle(.fromTopIn, .fromTopOut)">
+
+					
+					<div class="mdc-card demo-card demo-card--with-avatar">
+					  <section class="mdc-card__primary">
+						<div class="demo-card__avatar"></div>
+						<h1 class="mdc-card__title">Classes</h1>
+						<h2 class="mdc-card__subtitle">Coming Soon!</h2>
+					  </section>
+					  <section class="mdc-card__media demo-card__16-9-media"></section>
+					  <section class="mdc-card__supporting-text">
+						This is still under contruction
 					  </section>
 					  <section class="mdc-card__actions">
 						<button class="mdc-button mdc-button--compact mdc-card__action">Action 1</button>
@@ -166,6 +220,7 @@
 <script>window.mdc.autoInit();</script> 
 <script src="JavaScript/main.js"></script> 
 <script src="JavaScript/parallax.js"></script>
+<script src="JavaScript/ScrollTrigger.min.js"></script>
 <script src="https://www.gstatic.com/firebasejs/3.9.0/firebase.js"></script> 
 <script>
 	  // Initialize Firebase

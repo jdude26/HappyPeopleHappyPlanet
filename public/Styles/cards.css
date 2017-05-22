@@ -19,14 +19,14 @@
 	flex-grow: 1;
 	width:auto;
 	flex: 1;
-	
+	justify-content: flex-end;
 }
 
 .demo-card--with-avatar .mdc-card__primary {
 	position: relative;
 }
 .demo-card--with-avatar .demo-card__avatar {
-	position: absolute;
+	float: left;
 	background: #bdbdbd;
 	height: 2.5rem;
 	/* 40sp */
@@ -34,29 +34,32 @@
 	/* 40sp */
 	border-radius: 50%;
 }
+.mdc-card__subtitle{
+	justify-content: flex-start!important;
+}
+.mdc-card__supporting-text{
+	flex-grow:1;
+}
 .demo-card--with-avatar .mdc-card__title,  .demo-card--with-avatar .mdc-card__subtitle {
 	margin-left: 56px;
+	flex: auto;
+	
 }
 [dir="rtl"] .demo-card--with-avatar .mdc-card__title,  [dir="rtl"] .demo-card--with-avatar .mdc-card__subtitle {
 	margin-right: 56px;
 	margin-left: initial;
 }
+
 .demo-card__16-9-media {
-	background-image: url("images/16-9.jpg");
-	background-size: cover;
-	background-repeat: no-repeat;
-	height: 12.313rem;/* 197sp, for 16:9 ratio with 350sp demo card width */
+
+
 }
 .demo-card--small .mdc-card__media {
 	background-size: cover;
 	background-repeat: no-repeat;
-	height: 10.938rem;/* 175sp, for 1:1 ratio with 175sp demo card width */
-}
-.app {
-	background-image: url("../Design/BeTaoNowLogo.png");
+
 }
 .demo-card--bg-demo {
-	height: 21.875rem;
 	/* 350sp */
 	background-image: url("images/1-1.jpg");
 	background-size: cover;
