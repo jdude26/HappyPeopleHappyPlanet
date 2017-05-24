@@ -50,11 +50,13 @@
 	margin-left: initial;
 }
 
-.demo-card__16-9-media {
-
+.demo-card__16-9-media img{
+	width: calc(100% + 32px);
+	margin-left: -16px;
+	margin-right: -16px;
 
 }
-.demo-card--small .mdc-card__media {
+.demo-card--small .mdc-card__media img{
 	background-size: cover;
 	background-repeat: no-repeat;
 
@@ -68,3 +70,4 @@
 .demo-card--bg-demo .mdc-card__primary,  .demo-card--bg-demo .mdc-card__actions {
 	background: rgba(0, 0, 0, .4);
 }
+

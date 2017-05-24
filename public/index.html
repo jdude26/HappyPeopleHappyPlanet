@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="utf-8">
+<meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Happy People Happy Planet</title>
 <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
-<script src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.2/modernizr.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.2/modernizr.js"></script>
 <script src="https://www.gstatic.com/firebasejs/3.9.0/firebase-app.js"></script>
 <script src="https://www.gstatic.com/firebasejs/3.9.0/firebase-auth.js"></script>
 <script src="https://www.gstatic.com/firebasejs/3.9.0/firebase-database.js"></script>
@@ -17,8 +17,12 @@
 <link rel="stylesheet" href="Styles/loadIn.css">
 <link href="https://fonts.googleapis.com/css?family=Kaushan+Script" rel="stylesheet">
 <link rel="stylesheet" href="Styles/cards.css">
+<link rel="stylesheet" href="Styles/material.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
 </head>
 <body class="demo-body mdc-typography">
+<div class="se-pre-con"></div>
 	<!--Navigation on the Left-->
       <nav class="mdc-permanent-drawer">
         	<nav class="mdc-list"> 
@@ -68,15 +72,20 @@
        
         <div id="content">
         	<div class="inner">
-        		<div class="cards" data-scroll="toggle(.fromTopIn, .fromTopOut)" id="demo-wrapper">
+        	
+        	
+        	
+        	       			<div class="cards" data-scroll="toggle(.fromTopIn, .fromTopOut)">
+       			
 					<div class="mdc-card demo-card demo-card--with-avatar">
 					  <section class="mdc-card__primary">
 						<div class="demo-card__avatar"></div>
 						<h1 class="mdc-card__title">BE TAO NOW APP</h1>
 						<h2 class="mdc-card__subtitle"> I CHING DRUMMING FOR TRIUMPHANT LIVING! IS NOW FREE!</h2>
 					  </section>
-					  <section class="mdc-card__media demo-card__16-9-media app"><img src="Design/BeTaoNowLogo.png"></section>
+					  <section class="mdc-card__media demo-card__16-9-media app"></section>
 					  <section class="mdc-card__supporting-text">
+					  	<img src="Design/BeTaoNowLogo.png">
 						Be Tao NowTM ~ I Ching Drumming for Triumphant Living! is the first and only iOS app to combine all 64 Hexagrams of over 5,000 year-old I Ching wisdom with special drumming patterns and guided meditations based on the eight elements of the I Ching
 					  </section>
 					  <section class="mdc-card__actions">
@@ -84,6 +93,50 @@
 						<button class="mdc-button mdc-button--compact mdc-card__action">Go to the App Store</button>
 					  </section>
 					</div>
+					
+					<div class="mdc-card demo-card demo-card--with-avatar">
+					  <section class="mdc-card__primary">
+						<div class="demo-card__avatar"></div>
+						<h1 class="mdc-card__title">Classes</h1>
+						<h2 class="mdc-card__subtitle">Coming Soon!</h2>
+					  </section>
+					  <section class="mdc-card__media demo-card__16-9-media"></section>
+					  <section class="mdc-card__supporting-text">
+						This is still under contruction
+					  </section>
+					  <section class="mdc-card__actions">
+						<button class="mdc-button mdc-button--compact mdc-card__action">See My Classes</button>
+					  </section>
+					</div>
+					
+					<div class="mdc-card demo-card demo-card--with-avatar">
+					  <section class="mdc-card__primary">
+						<div class="demo-card__avatar"></div>
+						<h1 class="mdc-card__title">Stay Connected</h1>
+						<h2 class="mdc-card__subtitle">So much joy in wone place!</h2>
+					  </section>
+					  <section class="mdc-card__media demo-card__16-9-media"></section>
+					  <section class="mdc-card__supporting-text">
+						Sign up for our newsletter to stay up to date on all things happy!<br><br>
+						Read my blog for tips on how to live a happy life<br><br>
+						I offer retreats! Contact me to set one up!<br><br>
+						
+					  </section>
+					  <section class="mdc-card__actions">
+						<button class="mdc-button mdc-button--compact mdc-card__action">Newsletter Signup</button>
+						<button class="mdc-button mdc-button--compact mdc-card__action">Blog</button>
+						<button class="mdc-button mdc-button--compact mdc-card__action">Retreats</button>
+					  </section>
+					</div>
+					
+
+				</div>
+       			<div class="clear"></div>
+       			
+       			
+       			
+        		<div class="cards" data-scroll="toggle(.fromTopIn, .fromTopOut)" id="demo-wrapper">
+					
 					
 					
 					<div class="mdc-card demo-card demo-card--with-avatar">
@@ -105,116 +158,129 @@
 				</div>
        			<div class="clear"></div>
        			
-       			<div class="cards" data-scroll="toggle(.fromTopIn, .fromTopOut)">
 
-					
-					<div class="mdc-card demo-card demo-card--with-avatar">
-					  <section class="mdc-card__primary">
-						<div class="demo-card__avatar"></div>
-						<h1 class="mdc-card__title">Classes</h1>
-						<h2 class="mdc-card__subtitle">Coming Soon!</h2>
-					  </section>
-					  <section class="mdc-card__media demo-card__16-9-media"></section>
-					  <section class="mdc-card__supporting-text">
-						This is still under contruction
-					  </section>
-					  <section class="mdc-card__actions">
-						<button class="mdc-button mdc-button--compact mdc-card__action">Action 1</button>
-						<button class="mdc-button mdc-button--compact mdc-card__action">Action 2</button>
-					  </section>
-					</div>
-					
 
-				</div>
-       			<div class="clear"></div>
-       			
-       			
-       			
-        	</div>
-        	
-        	
-        	
-        	
-        	<div class="inner">
         		<div class="cards" data-scroll="toggle(.fromTopIn, .fromTopOut)">
-					<div class="mdc-card demo-card demo-card--with-avatar">
-					  <section class="mdc-card__primary">
-						<div class="demo-card__avatar"></div>
-						<h1 class="mdc-card__title">BE TAO NOW</h1>
-						<h2 class="mdc-card__subtitle"> I CHING DRUMMING FOR TRIUMPHANT LIVING! IS NOW FREE!</h2>
-					  </section>
-					  <section class="mdc-card__media demo-card__16-9-media app"></section>
-					  <section class="mdc-card__supporting-text">
-						Be Tao NowTM ~ I Ching Drumming for Triumphant Living! is the first and only iOS app to combine all 64 Hexagrams of over 5,000 year-old I Ching wisdom with special drumming patterns and guided meditations based on the eight elements of the I Ching
-					  </section>
-					  <section class="mdc-card__actions">
-						<button class="mdc-button mdc-button--compact mdc-card__action">Learn More</button>
-					  </section>
-					</div>
+					
 					
 					
 					<div class="mdc-card demo-card demo-card--with-avatar">
 					  <section class="mdc-card__primary">
 						<div class="demo-card__avatar"></div>
-						<h1 class="mdc-card__title">WHAT IS JOYFUL LIVING FROM THE HEART?</h1>
+						<h1 class="mdc-card__title">About Elisheva Herrera</h1>
 					  </section>
 					  <section class="mdc-card__media demo-card__16-9-media"></section>
 					  <section class="mdc-card__supporting-text">
-						Joyful living from the heart is intentional living rather than living by default. It involves, mindfulness, following your intuition and using your heart consciously, actively and dynamically to have dominion over your health, your happiness and to live your greatest potential. Living from the heart gives you the resilience to be happy regardless of the circumstances around you.
-						<br><br>
-						Each person has three brains, the head, heart and gut brain. The gut brain is your resource for body awareness and intuition.<i> Living from the heart integrates all three brains for expanded awareness and intentional living.</i> This is the how and tao of joyful living. Living from the heart is both a science and an art.
+					  	<img src="Design/self.jpg">
+					  	Elisheva Herrera is Chief Joyologist of Happy People Happy Planet™. She offers transformational wisdom, and joy via retreats and workshops, sound healing, heart coaching, lectures and inspirational performances.<br><br>
+					  	Elisheva is a Certified HeartMath Resilience Advantage™ Trainer, Reiki practitioner, Sound Healer, Laughter Yoga Leader and Vocalist. She is a “Grounded Intuitive” with a B.A. in Economics and minor in Music from Tufts University. Elisheva has been a tutor/teacher of many subjects since the age of 7. While grateful for book smarts and years of teaching experiences, Elisheva sees joyful living as her greatest accomplishment. She lives a magical life by following her heart and teaching others to do the same.
 					  </section>
 					  <section class="mdc-card__actions">
-						<button class="mdc-button mdc-button--compact mdc-card__action">The Science!</button>
+						<button class="mdc-button mdc-button--compact mdc-card__action">About Me</button>
+						<button class="mdc-button mdc-button--compact mdc-card__action">My Calendar</button>
+						<button class="mdc-button mdc-button--compact mdc-card__action">My Blog</button>
+						<button class="mdc-button mdc-button--compact mdc-card__action">Research</button>
 					  </section>
 					</div>
 				</div>
        			<div class="clear"></div>
-       			
-       			<div class="cards" data-scroll="toggle(.fromTopIn, .fromTopOut)">
-
-					
-					<div class="mdc-card demo-card demo-card--with-avatar">
-					  <section class="mdc-card__primary">
-						<div class="demo-card__avatar"></div>
-						<h1 class="mdc-card__title">Classes</h1>
-						<h2 class="mdc-card__subtitle">Coming Soon!</h2>
-					  </section>
-					  <section class="mdc-card__media demo-card__16-9-media"></section>
-					  <section class="mdc-card__supporting-text">
-						This is still under contruction
-					  </section>
-					  <section class="mdc-card__actions">
-						<button class="mdc-button mdc-button--compact mdc-card__action">Action 1</button>
-						<button class="mdc-button mdc-button--compact mdc-card__action">Action 2</button>
-					  </section>
-					</div>
-					
-					<div class="mdc-card demo-card demo-card--with-avatar">
-					  <section class="mdc-card__primary">
-						<div class="demo-card__avatar"></div>
-						<h1 class="mdc-card__title">Title</h1>
-						<h2 class="mdc-card__subtitle">Subhead</h2>
-					  </section>
-					  <section class="mdc-card__media demo-card__16-9-media"></section>
-					  <section class="mdc-card__supporting-text">
-						Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor.
-					  </section>
-					  <section class="mdc-card__actions">
-						<button class="mdc-button mdc-button--compact mdc-card__action">Action 1</button>
-						<button class="mdc-button mdc-button--compact mdc-card__action">Action 2</button>
-					  </section>
-					</div>
-				</div>
-       			<div class="clear"></div>
-       			
-       			
-       			
         	</div>
         </div>
       </main>
-	</div>
+      <footer>
+      	<div id="footerimg"><img src="Design/orangedivider.png"></div>
+		  <div class="inner">
+				<div class="cards">
 
+						<div class="mdc-card foot mdc-card--theme-light">
+						  <section class="mdc-card__primary">
+							<h1 class="mdc-card__title">Stay Connected</h1>
+						  </section>
+						  <section class="mdc-card__supporting-text">
+						  	Join us by signing up for our newsletter.
+							<br>
+							<div class="mdc-textfield">
+							  <input type="email" id="email" class="mdc-textfield__input">
+							  <label for="email" class="mdc-textfield__label mdc-theme--accent">Email address</label>
+							</div>
+							<button class="mdc-button mdc-button--raised mdc-button--accent" data-mdc-auto-init="MDCRipple">
+							 	Sign Up!
+							</button><br><br>
+							<a href="#" class="fa fa-facebook"></a>
+							<a href="#" class="fa fa-twitter"></a>
+							<a href="#" class="fa fa-google"></a>
+							<a href="#" class="fa fa-linkedin"></a>
+						  </section>
+						</div>
+
+						<div class="mdc-card foot mdc-card--theme-light">
+						  <section class="mdc-card__primary">
+							<h1 class="mdc-card__title">Navigate</h1>
+						  </section>
+						  <section class="mdc-card__supporting-text">
+				  				<nav class=""> 
+									<a class="" href="#">Home </a> <br>
+									<a class="" href="#">About </a> <br>
+									<a class="" href="#">BE TAO NOW </a> 
+									<a class="" href="#">Classes </a> <br>
+									<a class="" href="#">Blogs </a> <br>
+									<a class="" href="#">Calendar </a><br> 
+									<a class="" href="#">Retreats </a> <br>
+									<a class="" href="#"> Drumming </a> <br>
+									<a class="" href="#">Joyful Living </a> <br>
+									<a class="" href="#">The Goddess Signs </a> <br>
+									<a class="" href="#">Research </a>
+								</nav>
+						  </section>
+						</div>
+
+						<div class="mdc-card foot mdc-card--theme-light">
+						  <section class="mdc-card__primary">
+							<h1 class="mdc-card__title">Copyright And Legal</h1>
+						  </section>
+						  <section class="mdc-card__supporting-text">
+							  &copy <script>document.write(new Date().getFullYear());</script> All rights reserved.<br><br>
+							  <button class="mdc-button" id="privacy" data-mdc-auto-init="MDCRipple">
+							 	Privacy Policy
+							</button>
+						  <br><br>
+						  Eli@happypeoplehappyplanet.com<br>
+						  949-264-3449
+						  <br><br>
+						  Created By: Jared Duval
+						  </section>
+						</div>
+
+
+					</div>
+					<div class="clear"></div>
+			</div>
+      </footer>
+	</div>
+		<aside id="my-mdc-dialog"
+		  style="visibility:hidden"
+		  class="mdc-dialog"
+		  role="alertdialog"
+		  aria-labelledby="my-mdc-dialog-label"
+		  aria-describedby="my-mdc-dialog-description">
+		  <div class="mdc-dialog__surface">
+			<header class="mdc-dialog__header">
+			  <h2 id="my-mdc-dialog-label" style="color: black;" class="mdc-dialog__header__title">
+				Happy People Happy Planet Privacy Policy
+			  </h2>
+			</header>
+			<section id="my-mdc-dialog-description" class="mdc-dialog__body">
+			  By accessing or using the Happy People Happy Planet Web site, you agree to the terms of this Online Privacy Policy, as outlined below. If you do not agree to these terms, please do not access or use this site.<br><br>
+			  When you engage in certain activities on this site, you may be asked to provide certain information about yourself by filling out and submitting an online form. It is completely optional for you to engage in these activities. If you elect to engage in these activities, however, you may be required to provide personal information, such as your name, mailing address, e-mail address, and other personal identifying information.<br><br>
+			  Our site collects and stores this information in order to record and support your participation in the activities you select. Orbit also uses information that you provide as part of our effort to keep you informed about product upgrades, special offers, and other Orbit products and services. Orbit will never sell or share your information with other companies.
+			</section>
+			<footer class="mdc-dialog__footer">
+
+			  <button type="button" class="mdc-button mdc-dialog__footer__button mdc-dialog__footer__button--accept">Close</button>
+			</footer>
+		  </div>
+		  <div class="mdc-dialog__backdrop"></div>
+		</aside>
 
 <script src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js"></script> 
 <script>window.mdc.autoInit();</script> 
