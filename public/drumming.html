@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Happy People Happy Planet</title>
+<script>var here = 'drumming';</script>
+<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.2/modernizr.js"></script>
+<script src="https://www.gstatic.com/firebasejs/3.9.0/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/3.9.0/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/3.9.0/firebase-database.js"></script>
+<link rel="stylesheet" href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css">
+<link rel="stylesheet" href="Styles/main.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500">
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+<link rel="stylesheet" href="Styles/parallax.css">
+<link rel="stylesheet" href="Styles/loadIn.css">
+<link href="https://fonts.googleapis.com/css?family=Kaushan+Script" rel="stylesheet">
+<link rel="stylesheet" href="Styles/cards.css">
+<link rel="stylesheet" href="Styles/material.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<body class="demo-body mdc-typography">
+<div class="se-pre-con"></div>
+	<!--Navigation on the Left-->
+      <nav class="mdc-permanent-drawer">
+       	<div class="mdc-list-group">
+        	<nav class="mdc-list"> 
+				<a class="mdc-list-item mdc-permanent-drawer--selected" href="index.html"> <i class="material-icons mdc-list-item__start-detail" aria-hidden="true">home</i>Home </a> 
+				<a class="mdc-list-item" href="about.html"> <i class="material-icons mdc-list-item__start-detail" aria-hidden="true">face</i>About </a> 
+			</nav>
+			<hr class="mdc-list-divider">
+			<nav class="mdc-list"> 
+				<a class="mdc-list-item" href="betaonow.html"> <i class="material-icons mdc-list-item__start-detail" aria-hidden="true">shop</i>BE TAO NOW </a> 
+				<a class="mdc-list-item" href="classes.html"> <i class="material-icons mdc-list-item__start-detail" aria-hidden="true">class</i>Classes </a> 
+				<a class="mdc-list-item" href="prosperitychallenge.html"> <i class="material-icons mdc-list-item__start-detail" aria-hidden="true">track_changes</i>Prosperity Challenge </a> 
+				<a class="mdc-list-item" href="http://betaonowhappypeoplehappyplanet.blogspot.com/"> <i class="material-icons mdc-list-item__start-detail" aria-hidden="true">web</i>Blog </a> 
+				<a class="mdc-list-item" href="calendar.html"> <i class="material-icons mdc-list-item__start-detail" aria-hidden="true">event</i>Calendar </a> 
+				<a class="mdc-list-item" href="retreats.html"> <i class="material-icons mdc-list-item__start-detail" aria-hidden="true">group_work</i>Retreats </a> 
+			</nav>
+			<hr class="mdc-list-divider">
+			<nav class="mdc-list"> 
+				<a class="mdc-list-item" href="drumming.html"> <i class="material-icons mdc-list-item__start-detail" aria-hidden="true">album</i>Drumming </a> 
+				<a class="mdc-list-item" href="joyfulliving.html"> <i class="material-icons mdc-list-item__start-detail" aria-hidden="true">favorite</i>Joyful Living </a> 
+				<a class="mdc-list-item" href="goddesssigns.html"> <i class="material-icons mdc-list-item__start-detail" aria-hidden="true">av_timer</i>The Goddess Sings </a> 
+				<a class="mdc-list-item" href="research.html"> <i class="material-icons mdc-list-item__start-detail" aria-hidden="true">work</i>Research </a> 
+				<div class="connect">
+							<a href="https://www.facebook.com/elisheva.herrera" target="_blank" class="fa fa-facebook"></a>
+							<a href="https://twitter.com/thegoddesssings" target="_blank" class="fa fa-twitter"></a>
+							<a href="https://plus.google.com/114215862037992553156" class="fa fa-google"></a>
+							<a href="https://www.linkedin.com/in/elisheva-herrera-9b56aa2a" target="_blank" class="fa fa-linkedin"></a>
+				</p>
+			</nav>
+		  </div>
+      </nav>
+      
+      <!--Everything goes to the right of the navigation drawer-->
+    <div class="demo-content">
+      <main class="demo-main">
+       <!--Header with Parallax effect-->
+       <div id="parallax" class="parallax">
+		  <div class="layer-1 layer" data-type="parallax" data-depth="0.05"></div>
+		  <div class="layer-2 layer" data-type="parallax" data-depth="0.10"></div>
+		  <div class="layer-3 layer" data-type="parallax" data-depth="0.15"></div>
+		  <div class="layer-4 layer" data-type="parallax" data-depth="0.40"></div>
+		  <div class="layer-5 layer" data-type="parallax" data-depth="0.25"></div>
+		  
+		  <div class="layer-6 layer" data-type="parallax" data-depth="0.30"></div>
+		  <div class="layer-7 layer" data-type="parallax" data-depth="0.35"></div>
+		  <div class="layer-8 layer" data-type="parallax" data-depth="0.50"></div>
+		  <div class="layer-9 layer" data-type="parallax" data-depth="0.57"></div>
+		  <div class="layer-10 layer" data-type="parallax" data-depth="0.60"></div>
+		  <div class="layer-11 layer" data-type="parallax" data-depth="0.65"></div>
+		  <div class="layer-12 layer" data-type="parallax" data-depth="0.90"></div>
+		  <div class="layer-13 layer"><h2>Drumming</h2></div> 
+		</div>
+       
+       <!--Logo-->
+       <div class="blur" id="subtitle" data-type="parallax" data-depth="-0.3" ><h1>Happy People Happy Planet</h1></div><div data-type="parallax" data-depth="-0.3"  id="HeartLogo" ></div>
+       
+        <div id="content">
+        	<div class="inner" id="cms">
+        	
+			</div>
+
+        </div>
+      </main>
+      <footer>
+      	<div id="footerimg"><img src="Design/orangedivider.png"></div>
+		  <div class="inner">
+				<div class="cards">
+
+						<div class="mdc-card foot mdc-card--theme-light">
+						  <section class="mdc-card__primary">
+							<h1 class="mdc-card__title">Navigate</h1>
+						  </section>
+						  <section class="mdc-card__supporting-text">
+				  				<nav class=""> 
+									<a class="" href="index.html">Home </a> <br>
+									<a class="" href="about.html">About </a> <br>
+									<a class="" href="betaonow.html">BE TAO NOW </a> 
+									<a class="" href="classes.html">Classes </a> <br>
+									<a class="" href="prosperitychallenge.html">Prosperity Challenge </a> <br>
+									<a class="" href="http://betaonowhappypeoplehappyplanet.blogspot.com/">Blog </a> <br>
+									<a class="" href="calendar.html">Calendar </a><br> 
+									<a class="" href="retreats.html">Retreats </a> <br>
+									<a class="" href="drumming.html"> Drumming </a> <br>
+									<a class="" href="joyfulliving.html">Joyful Living </a> <br>
+									<a class="" href="goddesssigns.html">The Goddess Sings </a> <br>
+									<a class="" href="research.html">Research </a>
+								</nav>
+						  </section>
+						</div>
+
+						<div class="mdc-card foot mdc-card--theme-light">
+						  <section class="mdc-card__primary">
+							<h1 class="mdc-card__title">Copyright And Legal</h1>
+						  </section>
+						  <section class="mdc-card__supporting-text">
+							  &copy <script>document.write(new Date().getFullYear());</script> All rights reserved.<br>
+							  Created By: <a href="http://www.jareduval.com" target="_blank">Jared Duval</a><br><br>
+							  Elisheva Herrera Phone: 949-264-3449<br><br><br>
+						  
+							  <button class="mdc-button mdc-button--raised mdc-button--accent" id="privacy" data-mdc-auto-init="MDCRipple">
+							 	Privacy Policy
+								</button>
+
+							  <script>function email(){document.location.href = "mailto:Eli@happypeoplehappyplanet.com";}</script>
+						  <button onClick="email()" class="mdc-button mdc-button--raised mdc-button--accent" data-mdc-auto-init="MDCRipple">
+							 	Email Elisheva
+							</button>
+
+						  </section>
+						</div>
+
+
+					</div>
+					<div class="clear"></div>
+					
+			</div>
+      </footer>
+	</div>
+		<aside id="my-mdc-dialog"
+		  class="mdc-dialog"
+		  role="alertdialog"
+		  aria-labelledby="my-mdc-dialog-label"
+		  aria-describedby="my-mdc-dialog-description">
+		  <div class="mdc-dialog__surface">
+			<header class="mdc-dialog__header">
+			  <h2 id="my-mdc-dialog-label" style="color: black;" class="mdc-dialog__header__title">
+				Happy People Happy Planet Privacy Policy
+			  </h2>
+			</header>
+			<section id="my-mdc-dialog-description" class="mdc-dialog__body">
+			  By accessing or using the Happy People Happy Planet Web site, you agree to the terms of this Online Privacy Policy, as outlined below. If you do not agree to these terms, please do not access or use this site.<br><br>
+			  When you engage in certain activities on this site, you may be asked to provide certain information about yourself by filling out and submitting an online form. It is completely optional for you to engage in these activities. If you elect to engage in these activities, however, you may be required to provide personal information, such as your name, mailing address, e-mail address, and other personal identifying information.<br><br>
+			  Our site collects and stores this information in order to record and support your participation in the activities you select. Orbit also uses information that you provide as part of our effort to keep you informed about product upgrades, special offers, and other Orbit products and services. Orbit will never sell or share your information with other companies.
+			</section>
+			<footer class="mdc-dialog__footer">
+
+			  <button type="button" class="mdc-button mdc-dialog__footer__button mdc-dialog__footer__button--accept">Close</button>
+			</footer>
+		  </div>
+		  <div class="mdc-dialog__backdrop"></div>
+		</aside>
+
+
+<script src="JavaScript/parallax.js"></script>
+<script src="https://www.gstatic.com/firebasejs/3.9.0/firebase.js"></script> 
+<script src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js"></script> 
+<script src="JavaScript/main.js"></script> 
+<script src="JavaScript/CMS.js"></script>
+<script src="JavaScript/ScrollTrigger.min.js"></script>
+</body>
+</html>

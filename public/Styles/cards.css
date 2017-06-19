@@ -36,6 +36,7 @@
 }
 .mdc-card__subtitle{
 	justify-content: flex-start!important;
+	height: 35px;
 }
 .mdc-card__supporting-text{
 	flex-grow:1;
@@ -44,16 +45,24 @@
 	margin-left: 56px;
 	flex: auto;
 	
+	
 }
 [dir="rtl"] .demo-card--with-avatar .mdc-card__title,  [dir="rtl"] .demo-card--with-avatar .mdc-card__subtitle {
 	margin-right: 56px;
 	margin-left: initial;
 }
 
-.demo-card__16-9-media img{
-	width: calc(100% + 32px);
-	margin-left: -16px;
-	margin-right: -16px;
+.demo-card__16-9-media{
+	margin-top:10px;
+	margin-left: -32px;
+	margin-right: -32px;
+	height: 150px;
+
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+	background-origin: padding-box;
+	
 
 }
 .demo-card--small .mdc-card__media img{
